@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta http-equiv="Cache-Control"
+              content="no-cache, no-store, max-age=0, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <title>eID Identity Provider Java Example</title>
+    </h:head>
+
+    <h:body>
+        <h1>eID Identity Provider Java Example</h1>
+        <h:form>
+            <h:panelGrid columns="2">
+                <h:outputText value="Language:" />
+                <h:selectOneMenu value="#{idpExampleController.language}">
+                    <f:selectItems value="#{idpExampleController.languages}" />
+                </h:selectOneMenu>
+            </h:panelGrid>
+            <h:panelGrid columns="1">
+                <h:commandLink value="OpenID 2.0 Identification" action="#{idpExampleController.openIDAuthentication('ident')}"/>
+                <h:commandLink value="OpenID 2.0 Authentication" action="#{idpExampleController.openIDAuthentication('auth')}"/>
+                <h:commandLink value="OpenID 2.0 Identification and Authentication" action="#{idpExampleController.openIDAuthentication('auth-ident')}"/>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>

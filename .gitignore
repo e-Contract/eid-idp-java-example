@@ -1,0 +1,5 @@
+target/
+faces-config.NavData
+.project
+.settings/
+.classpath
