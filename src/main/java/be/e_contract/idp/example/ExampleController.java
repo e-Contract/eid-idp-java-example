@@ -1,6 +1,6 @@
 /*
  * eID Identity Provider Java Example.
- * 
+ *
  * Copyright 2015 e-Contract.be BVBA. All rights reserved.
  * e-Contract.be BVBA proprietary/confidential. Use is subject to license terms.
  */
@@ -84,6 +84,7 @@ public class ExampleController implements Serializable {
         selectItems.add(new SelectItem("nl", "Nederlands"));
         selectItems.add(new SelectItem("en", "English"));
         selectItems.add(new SelectItem("fr", "Francais"));
+        selectItems.add(new SelectItem("de", "Deutsch"));
         return selectItems;
     }
 }

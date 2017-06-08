@@ -1,6 +1,6 @@
 /*
  * eID Identity Provider Java Example.
- * 
+ *
  * Copyright 2015 e-Contract.be BVBA. All rights reserved.
  * e-Contract.be BVBA proprietary/confidential. Use is subject to license terms.
  */

@@ -1,6 +1,6 @@
 /*
  * eID Identity Provider Java Example.
- * 
+ *
  * Copyright 2015 e-Contract.be BVBA. All rights reserved.
  * e-Contract.be BVBA proprietary/confidential. Use is subject to license terms.
  */
@@ -92,7 +92,7 @@ public class AuthenticationResponseServlet extends HttpServlet {
                             .entrySet()) {
                         attributes
                                 .add(new Attribute(entry.getValue(), fetchResponse
-                                                .getAttributeValue(entry.getKey())));
+                                        .getAttributeValue(entry.getKey())));
                     }
                 }
             }
